@@ -85,6 +85,9 @@ public class FusionFiles {
             writer.write(auxOne + "\n");
             writer.write(auxTwo + "\n");
 
+            // Aqui firmo el documento
+            writer.write("Hecho por Luis Hortua (El Batman)");
+
             writer.close();
 
         } catch (IOException e) {
