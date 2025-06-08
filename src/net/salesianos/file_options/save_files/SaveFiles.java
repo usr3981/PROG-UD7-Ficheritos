@@ -10,6 +10,8 @@ public class SaveFiles {
 
         System.out.println("Ingresa un texto (minimo 30 caracteres): ");
 
+        // Esto verifica que sean 30 caracteres
+
         while (true) {
 
             textoFichero = scanner.nextLine();
@@ -22,7 +24,12 @@ public class SaveFiles {
             }
         }
 
-        System.out.println("Exito");
+        // Esto formatea el texto a mayusculas y sustituye espacios por barrabajas
+        // (A-Z,espacio-_), <- no se si es asi pero se ve chido :)
+
+        textoFichero = textoFichero.toUpperCase().replace(" ", "_");
+
+        scanner.close();
     }
 
 }
