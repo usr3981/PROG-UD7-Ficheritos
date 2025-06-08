@@ -1,6 +1,8 @@
 import net.salesianos.file_options.fusion_files.FusionFiles;
 import net.salesianos.file_options.get_files.GetFiles;
+import net.salesianos.file_options.persistence_files.PersistenceFiles;
 import net.salesianos.file_options.save_files.SaveFiles;
+import net.salesianos.tables.Table;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -11,6 +13,10 @@ public class App {
 
         // FusionFiles.createFile();
 
-        FusionFiles.fusionFilesContent();
+        // FusionFiles.fusionFilesContent();
+
+        // PersistenceFiles.createFile();
+
+        PersistenceFiles.saveTable(new Table("Blanco", 3));
     }
 }

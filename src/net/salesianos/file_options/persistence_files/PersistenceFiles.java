@@ -9,12 +9,14 @@ import net.salesianos.tables.Table;
 
 public class PersistenceFiles {
 
+    final static String PATH_FILE = "src/net/salesianos/files/archivo_persistencia.txt";
+
     ArrayList<Table> tableList = new ArrayList<>();
 
     public static void createFile() {
 
         try {
-            FileWriter writer = new FileWriter("src/net/salesianos/files/archivo_persistencia.txt",
+            FileWriter writer = new FileWriter(PATH_FILE,
                     StandardCharsets.UTF_8);
 
             System.out.println("Archivo creado");
@@ -27,4 +29,23 @@ public class PersistenceFiles {
 
     }
 
+    public static void saveTable(Table table) {
+
+        try {
+            FileWriter writer = new FileWriter(PATH_FILE, StandardCharsets.UTF_8,
+                    true);
+
+            writer.write(table + "\n");
+
+            writer.close();
+            System.out.println("Mesa agregada correctamente");
+
+        } catch (IOException e) {
+            System.out.println("Archivo no encontrado, File Reader");
+        }
+    }
+
+    public static void getTable() {
+
+    }
 }
