@@ -1,9 +1,12 @@
+import net.salesianos.file_options.get_files.GetFiles;
 import net.salesianos.file_options.save_files.SaveFiles;
 
 public class App {
     public static void main(String[] args) throws Exception {
 
-        SaveFiles.createFile();
+        // SaveFiles.createFile();
+
+        GetFiles.getFileContent();
 
     }
 }
