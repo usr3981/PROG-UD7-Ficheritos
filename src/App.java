@@ -9,6 +9,8 @@ public class App {
 
         // GetFiles.getFileContent();
 
-        FusionFiles.createFile();
+        // FusionFiles.createFile();
+
+        FusionFiles.fusionFilesContent();
     }
 }
