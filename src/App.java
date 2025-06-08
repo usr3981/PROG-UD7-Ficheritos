@@ -1,3 +1,4 @@
+import net.salesianos.file_options.fusion_files.FusionFiles;
 import net.salesianos.file_options.get_files.GetFiles;
 import net.salesianos.file_options.save_files.SaveFiles;
 
@@ -6,7 +7,8 @@ public class App {
 
         // SaveFiles.createFile();
 
-        GetFiles.getFileContent();
+        // GetFiles.getFileContent();
 
+        FusionFiles.createFile();
     }
 }
