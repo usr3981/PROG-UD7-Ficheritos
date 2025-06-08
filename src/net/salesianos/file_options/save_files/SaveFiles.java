@@ -8,17 +8,21 @@ public class SaveFiles {
 
         Scanner scanner = new Scanner(System.in);
 
-        while (textoFichero.length() < 30) {
+        System.out.println("Ingresa un texto (minimo 30 caracteres): ");
 
-            System.out.println("Ingresa un texto (minimo 30 caracteres): ");
+        while (true) {
 
             textoFichero = scanner.nextLine();
 
+            if (textoFichero.length() < 30) {
+                System.out
+                        .println("Te faltaron [" + (30 - textoFichero.length()) + "] caracteres, \n intenta de nuevo:");
+            } else {
+                break;
+            }
         }
 
-        System.out.println("fuera: " + textoFichero.length());
-
-        scanner.close();
+        System.out.println("Exito");
     }
 
 }
