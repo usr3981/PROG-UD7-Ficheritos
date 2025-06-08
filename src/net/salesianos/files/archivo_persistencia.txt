@@ -1,1 +1,2 @@
 Table [color=Blanco, numeroPatas=3]
+Table [color=Marfil, numeroPatas=4]

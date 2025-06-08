@@ -85,10 +85,9 @@ public class FusionFiles {
             writer.write(auxOne + "\n");
             writer.write(auxTwo + "\n");
 
-            // Aqui firmo el documento
-            writer.write("Hecho por Luis Hortua (El Batman)");
-
             writer.close();
+
+            addSignatureIntoNewFile();
 
         } catch (IOException e) {
             System.out.println("Archivo no encontrado, File Reader");
@@ -97,6 +96,17 @@ public class FusionFiles {
     }
 
     public static void addSignatureIntoNewFile() {
-        // hecho por Luis Hortua (El barto)
+
+        try {
+            FileWriter writer = new FileWriter("src/net/salesianos/files/archivo_fusionado.txt", StandardCharsets.UTF_8,
+                    true);
+
+            // Aqui firmo el documento
+            writer.write("Hecho por Luis Hortua (El Batman)");
+
+            writer.close();
+        } catch (Exception e) {
+            System.out.println("Archivo no encontrado, File Reader");
+        }
     }
 }

@@ -17,6 +17,9 @@ public class App {
 
         // PersistenceFiles.createFile();
 
-        PersistenceFiles.saveTable(new Table("Blanco", 3));
+        // PersistenceFiles.saveTable(new Table("Blanco", 3));
+        // PersistenceFiles.saveTable(new Table("Marfil", 4));
+
+        PersistenceFiles.getTables();
     }
 }
